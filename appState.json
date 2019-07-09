@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "KGit2/lambda.js",
-        "code": "let AWS = require('aws-sdk');\nconst cognito_idp = new AWS.CognitoIdentityServiceProvider();\n\nexports.handler = function (event, context, callback) {\n    cognito_idp.listUsers({\n        UserPoolId: \"us-east-1_uVXTQInep\",\n        Limit: 10\n    }, function (error, data) {\n        if (error) {\n            console.log(error);\n            throw error;\n        } else {\n        console.log(data);\n        }\n    });\n    callback(null, { \"message\": \"Successfully rr executed\" });\n}",
+        "code": "let AWS = require('aws-sdk');\nconst cognito_idp = new AWS.CognitoIdentityServiceProvider();\n\nexports.handler = function (event, context, callback) {\n    cognito_idp.listUsers({\n        UserPoolId: \"us-east-1_uVXTQInep\",\n        Limit: 10\n    }, function (error, data) {\n        if (error) {\n            console.log(error);\n            throw error;\n        } else {\n        console.log(data);\n        }\n    });\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -340,9 +340,9 @@
           "version": "2.17.1",
           "language": "javascript"
         },
-        "math-expression-evaluator": {
-          "name": "math-expression-evaluator",
-          "version": "1.2.17",
+        "jimp": {
+          "name": "jimp",
+          "version": "0.6.4",
           "language": "javascript"
         }
       }
@@ -355,7 +355,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562647763279
+    "lastSave": 1562648005676
   },
   "VCS_STATE": {
     "provider": "GitHub",
