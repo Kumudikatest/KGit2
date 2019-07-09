@@ -1,10 +1,7 @@
 {
   "name": "KGit2",
   "version": "1.0.0",
-  "dependencies": {
-    "mysql": "2.17.1",
-    "jimp": "0.6.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "aws-sdk": "2.176.0"
   }
