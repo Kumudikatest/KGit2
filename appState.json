@@ -28,7 +28,9 @@
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
-          "layers": []
+          "layers": [
+            "arn:aws:lambda:us-east-2:123456789012:layer:my-layer:3"
+          ]
         },
         "triggers": []
       }
@@ -355,7 +357,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562665781689
+    "lastSave": 1562666315463
   },
   "VCS_STATE": {
     "provider": "GitHub",
