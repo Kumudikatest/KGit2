@@ -13,5 +13,5 @@ exports.handler = function (event, context, callback) {
         console.log(data);
         }
     });
-    callback(null, { "message": "Successfully rr executed" });
+    callback(null, { "message": "Successfully executed" });
 }

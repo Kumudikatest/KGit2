@@ -22,12 +22,12 @@
         "children": [],
         "isRemovable": true,
         "filePath": "KGit2/lambda.js",
-        "code": "let AWS = require('aws-sdk');\nconst cognito_idp = new AWS.CognitoIdentityServiceProvider();\n\nexports.handler = function (event, context, callback) {\n    cognito_idp.listUsers({\n        UserPoolId: \"us-east-1_uVXTQInep\",\n        Limit: 10\n    }, function (error, data) {\n        if (error) {\n            console.log(error);\n            throw error;\n        } else {\n        console.log(data);\n        }\n    });\n    callback(null, { \"message\": \"Successfully rr executed\" });\n}",
+        "code": "let AWS = require('aws-sdk');\nconst cognito_idp = new AWS.CognitoIdentityServiceProvider();\n\nexports.handler = function (event, context, callback) {\n    cognito_idp.listUsers({\n        UserPoolId: \"us-east-1_uVXTQInep\",\n        Limit: 10\n    }, function (error, data) {\n        if (error) {\n            console.log(error);\n            throw error;\n        } else {\n        console.log(data);\n        }\n    });\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "config": {
-          "runtime": "nodejs8.10",
+          "runtime": "nodejs10.x",
           "handler": "handler",
-          "timeout": 142,
-          "memory": 384,
+          "timeout": 60,
+          "memory": 128,
           "layers": []
         },
         "triggers": []
@@ -355,7 +355,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562665694976
+    "lastSave": 1562665781689
   },
   "VCS_STATE": {
     "provider": "GitHub",
