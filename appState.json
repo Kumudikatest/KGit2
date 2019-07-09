@@ -334,6 +334,16 @@
           "version": "2.176.0",
           "dev": true,
           "notRemovable": false
+        },
+        "mysql": {
+          "name": "mysql",
+          "version": "2.17.1",
+          "language": "javascript"
+        },
+        "jimp": {
+          "name": "jimp",
+          "version": "0.6.4",
+          "language": "javascript"
         }
       }
     }
@@ -345,7 +355,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562646169641
+    "lastSave": 1562646477152
   },
   "VCS_STATE": {
     "provider": "GitHub",
