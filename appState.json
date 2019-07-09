@@ -30,7 +30,15 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": []
+        "triggers": [],
+        "testCases": {
+          "8ea17769-1f3d-490a-aa2d-5922a30e09f4": {
+            "id": "8ea17769-1f3d-490a-aa2d-5922a30e09f4",
+            "name": "Hiru added event",
+            "functionId": "13dee094-bc0b-4d45-ba40-7b54b4832fee",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
       }
     },
     "deletedFiles": [],
@@ -355,7 +363,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562648005676
+    "lastSave": 1562649059855
   },
   "VCS_STATE": {
     "provider": "GitHub",
