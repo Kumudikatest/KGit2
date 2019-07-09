@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "KGit2/lambda.js",
-        "code": "let AWS = require('aws-sdk');\nconst cognito_idp = new AWS.CognitoIdentityServiceProvider();\n\nexports.handler = function (event, context, callback) {\n    cognito_idp.listUsers({\n        UserPoolId: \"us-east-1_uVXTQInep\",\n        Limit: 10\n    }, function (error, data) {\n        if (error) {\n            console.log(error);\n            throw error;\n        } else {\n        console.log(data);\n        }\n    });\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
+        "code": "let AWS = require('aws-sdk');\nconst cognito_idp = new AWS.CognitoIdentityServiceProvider();\n\nexports.handler = function (event, context, callback) {\n    cognito_idp.listUsers({\n        UserPoolId: \"us-east-1_uVXTQInep\",\n        Limit: 10\n    }, function (error, data) {\n        if (error) {\n            console.log(error);\n            throw error;\n        } else {\n        console.log(data);\n        }\n    });\n    callback(null, { \"message\": \"Successfully rr executed\" });\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -30,15 +30,7 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": [],
-        "testCases": {
-          "8ea17769-1f3d-490a-aa2d-5922a30e09f4": {
-            "id": "8ea17769-1f3d-490a-aa2d-5922a30e09f4",
-            "name": "Hiru added event",
-            "functionId": "13dee094-bc0b-4d45-ba40-7b54b4832fee",
-            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
-          }
-        }
+        "triggers": []
       }
     },
     "deletedFiles": [],
@@ -348,9 +340,9 @@
           "version": "2.17.1",
           "language": "javascript"
         },
-        "jimp": {
-          "name": "jimp",
-          "version": "0.6.4",
+        "math-expression-evaluator": {
+          "name": "math-expression-evaluator",
+          "version": "1.2.17",
           "language": "javascript"
         }
       }
@@ -363,7 +355,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562649059855
+    "lastSave": 1562662114101
   },
   "VCS_STATE": {
     "provider": "GitHub",
